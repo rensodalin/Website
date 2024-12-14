@@ -1,0 +1,226 @@
+
+.tittle-h2-top {  
+  display: flex;  
+  justify-content: center;  
+  gap: 10px;  
+  font-weight: bold;
+  margin-top: 100px;  
+  margin-bottom: 100px;  
+}  
+.tittle-h2-top h2 {  
+  font-size: 50px;  
+  margin: 0;  
+}  
+.tittle-mid {  
+  color: #335558;  
+}  
+.tittle-mid-mid {  
+  color: #f26644;  
+}  
+  
+.mid-container1 {  
+  width: 75%;  
+  display: flex;  
+  justify-content: center;  
+  flex-direction: row;  
+  margin-top: 0px;  
+  margin: AUTO;  
+}  
+.text-container1 {  
+  flex: 1;  
+  padding: 50px;  
+  box-sizing: border-box;  
+  text-align: center;  
+}  
+.img-container1 {  
+  flex: 0;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}  
+.img-container1 img {  
+  width: 500px;  
+  height: auto;  
+}  
+.text-h-container1 {  
+  font-weight: bold;  
+  width: 100%;  
+  height: auto;  
+  color: #f26644;  
+  font-size: 50px;  
+  flex: 0;  
+}  
+.text-p-container1 {  
+  display: flex;  
+  flex-direction: column;  
+  width: 500px;  
+  align-items: center;  
+  flex: 1;  
+  line-height: 30px;
+}  
+.but-container1 {  
+  width: 100%;  
+  margin: 100px 0;  
+}  
+.but-container1 .show-img {  
+  width: 75%;  
+  margin: auto;  
+}  
+.but-container1 .show-img img {  
+  width: 100%;  
+  border-radius: 30px;  
+}  
+#git-button {  
+  width: 200px;  
+  height: 50px;  
+  margin: 10px 0 25px 0;  
+  border: none;  
+  border-radius: 10px;  
+  color: white;  
+  font-size: 20px;  
+  font-family: Montserrat;  
+  font-weight: bolder;  
+  background-color: #335558;  
+  box-shadow: 10px 10px 0px 0px rgb(255, 69, 0);  
+}  
+#git-button:hover {  
+  background: #f26644;  
+  box-shadow: none;
+}  
+  
+@media only screen and (max-width: 600px) {  
+  .tittle-h2-top {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    max-width: auto;  
+  }  
+  .mid-container1 {  
+    display: flex;  
+    justify-content: center;  
+    flex-direction: column;  
+    margin-top: 0px;  
+    margin: auto;  
+  }  
+  .img-container1 {  
+    flex: 0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+  }  
+  .img-container1 img {  
+    width: 95%;  
+  }  
+  .text-container1 {  
+    display: flex;  
+    flex-direction: column;  
+  }  
+  .text-h-container1 {  
+    display: flex;  
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: center;  
+  }  
+  .text-p-container1 {  
+    display: flex;  
+    flex-direction: column;  
+    width: 170%;  
+    align-items: center;  
+    align-self: center;  
+  }  
+  .but-container1 {  
+    width: 100%;  
+    margin: auto;  
+    margin-bottom: 30px;  
+  }  
+  .show-img img {  
+    width: 100%;  
+  }  
+}  
+@media only screen and (min-width: 600px) {  
+  .tittle-h2-top {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    max-width: auto;  
+  }  
+  .mid-container1 {  
+    display: flex;  
+    justify-content: center;  
+    flex-direction: column;  
+    margin-top: 0px;  
+    margin: auto;  
+  }  
+  .img-container1 {  
+    flex: 0;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+  }  
+  .img-container1 img {  
+    width: 75%;  
+  }  
+  .text-container1 {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+  }  
+  .text-h-container1 {  
+    display: flex;  
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: center;  
+    width: 550px;  
+  }  
+  
+  .text-p-container1 {  
+    display: flex;  
+    flex-direction: column;  
+    width: 575px;  
+    align-items: center;  
+    align-self: center;  
+  }  
+  .but-container1 {  
+    width: 100%;  
+    margin: auto;  
+    margin-bottom: 40px;  
+  }  
+  .show-img img {  
+    width: 100%;  
+  }  
+}  
+  
+/* Medium devices (landscape tablets, 768px and up) */  
+@media only screen and (min-width: 768px) {  
+  .text-h-container1 {  
+    flex-direction: row;  
+    width: 550px;  
+  }  
+  
+  .text-p-container1 {  
+    width: 575px;  
+  }  
+}  
+  
+/* Large devices (laptops/desktops, 992pxand up) */  
+@media only screen and (min-width: 992px) {  
+  .tittle-h2-top {  
+    flex-direction: row;  
+  }  
+  .mid-container1 {  
+    flex-direction: row;  
+  }  
+  
+  .img-container1 img {  
+    width: 355px; 
+}  
+  .text-h-container1 {  
+    width: 100%;  
+  }  
+  .text-p-container1 {  
+    width: 509px;  
+  }  
+}

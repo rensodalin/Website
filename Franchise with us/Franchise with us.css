@@ -1,0 +1,314 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.body{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.body .box1,.box2,.box3{
+    width: 75%;
+    overflow: hidden;
+    font-weight: normal;
+    display: flex;
+    padding: 50px 0px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.body .box1{
+    padding-top: 0;
+    column-gap: 10px;
+}
+.body h2{
+    margin: 0;
+}
+.body .box1 .box1_left{
+    width: 60%;
+    overflow: hidden;
+    padding: 50px 0;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.body .box1 .box1_left h2{
+    color: #F16341;
+}
+.body .box1 .box1_right{
+    width: 40%;
+    overflow: hidden;
+}
+.body .box2{
+    width: 100%;
+    padding: 100px 12.5%;
+    background-color: antiquewhite;
+}
+.body .box2 .box2_left{
+    width: 50%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 350px;
+    gap: 20px;
+}
+.body .box2 .box2_left .pic img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.body .box2 .box2_left .big{
+    grid-column: span 2;
+}
+.body .box2 .box2_right{
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+}
+.body .box2 .box2_right h2{
+    color: #F16341;
+}
+.body .box2 .box2_right button{
+    width: 200px;
+    height: 50px;
+    margin: 10px 0 25px 0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    background-color: #335558;
+    box-shadow: 10px 10px 0px 0px  rgb(255,69,0);
+}
+.body .box2 .box2_right button:hover{
+    box-shadow: none;
+    background-color: orangered;
+}
+.body .box2 .box2_right button a{
+    color: white;
+    text-decoration: none;
+}
+.body .box2 .box2_right .item{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.body .box2 .box2_right .item .small_box{
+    width: 24%;
+    height: 100%;
+    text-align: center;
+}
+.body .box2 .box2_right .item .small_box p{
+    font-size: 13px;
+    margin: 0;
+} 
+.body .box2 .box2_right .item .small_box img{
+    width: 100%;
+    height:35px;
+}
+.body .box3{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 600px;
+    column-gap: 40px;
+}
+.body .box3 h2{
+    grid-column: span 4;
+    padding-bottom: 40px;
+    color: #F16341;
+}
+.body .box3 .item .pic{
+    height: 300px;
+    width: 100%;
+}
+.body .box3 .item .pic img{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.body .box3 .item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    text-align: start;
+    line-height: 25px;
+}
+.body .box3 .item .name p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.body .box3 .item a{
+    text-decoration: none;
+    color: #F16341;
+    font-weight: bold;
+}
+.body .box3 .item a:hover{
+    text-decoration: underline;
+    color: #335558;
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width:1400px) {
+    .body .box1,.box2,.box3{
+        width: 90%;
+    }
+    .body .box2{
+        padding: 100px 5%;
+    }
+    .body .box3{
+        column-gap: 30px;
+    }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .body .box1,.box2,.box3{
+        width: 90%;
+    }
+    .body .box2{
+        padding: 100px 5%;
+    }
+    .body .box3{
+        column-gap: 20px;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .body .box1,.box2,.box3{
+        width: 90%;
+    }
+    .body .box1{
+        flex-direction: column;
+    }
+    .body .box1 .box1_left{
+        width: 100%;
+    }
+    .body .box1 .box1_right{
+        width: 100%;
+    }
+    .body .box2{
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .body .box2 .box2_left{
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .body .box2 .box2_right{
+        width: 100%;
+    }
+    .body .box3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 40px;
+        padding: 30px 60px;
+        box-sizing: border-box;
+    }
+    .body .box3 .item .pic{
+        width: 80%;
+        margin: auto;
+    }
+    .body .box3 h2{
+        grid-column: span 2;
+        padding-bottom: 0px;
+    }
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 450px) and (max-width: 767.98px){ 
+    .body .box1,.box2,.box3{
+        width: 90%;
+    }
+    .body .box1{
+        flex-direction: column;
+    }
+    .body .box1 .box1_left{
+        width: 100%;
+    }
+    .body .box1 .box1_right{
+        width: 100%;
+    }
+    .body .box2{
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .body .box2 .box2_left{
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+    .body .box2 .box2_right{
+        width: 100%;
+        padding:30px 0 0 0;
+    }
+    .body .box3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 40px;
+
+    }
+    .body .box3 .item .pic{
+        width: 100%;
+        margin: auto;
+    }
+    .body .box3 h2{
+        grid-column: span 2;
+        padding-bottom: 0px;
+    }
+
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 450px) {
+    .body .box1,.box2,.box3{
+        width: 90%;
+    }
+    .body .box1{
+        flex-direction: column;
+    }
+    .body .box1 .box1_left{
+        width: 100%;
+    }
+    .body .box1 .box1_right{
+        width: 100%;
+    }
+    .body .box2{
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .body .box2 .box2_left{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .body .box2 .box2_right{
+        width: 100%;
+        padding:30px 0 0 0;
+    }
+    .body .box3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        gap: 40px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .body .box3 .item .pic{
+        width: 80%;
+        margin: auto;
+    }
+    .body .box3 h2{
+        grid-column: span 1;
+        padding-bottom: 0px;
+    }
+    
+}
+
