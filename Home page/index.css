@@ -63,7 +63,8 @@ h1{
     line-height: 30px;
     text-align: center;
 }
-.ourstory .inner input[type="button"]{
+.ourstory .inner .button {
+    display: inline-block; /* Makes it behave like a button */
     width: 200px;
     height: 50px;
     margin: 10px 0 25px 0;
@@ -73,14 +74,20 @@ h1{
     font-size: 20px;
     font-family: Montserrat;
     font-weight: bolder;
+    text-align: center; /* Centers text inside the button */
+    line-height: 50px; /* Matches the button height for vertical centering */
+    text-decoration: none; /* Removes underline from link */
     background-color: #335558;
-    box-shadow: 10px 10px 0px 0px  rgb(255,69,0);
+    box-shadow: 10px 10px 0px 0px rgb(255, 69, 0);
     align-self: center;
+    cursor: pointer; /* Adds a pointer cursor for better UX */
 }
-.ourstory .inner input[type="button"]:hover{
+
+.ourstory .inner .button:hover {
     box-shadow: none;
     background-color: orangered;
 }
+
 #h1{
     font-size: 50px;
     color: #F16341;
@@ -464,7 +471,7 @@ h1{
         row-gap: 50px;
         padding: 100px 20px 50px 20px;
     }
-    .ourstory .inner input[type="button"]{
+    .ourstory .inner .button{
         width: 150px;
     height: 50px;
     margin: 10px 0 25px 0;
